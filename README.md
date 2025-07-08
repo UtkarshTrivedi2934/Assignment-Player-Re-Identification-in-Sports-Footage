@@ -31,8 +31,8 @@ This project enables:
 
 ### 1️⃣ Clone the Repository
 ```bash
-git clone https://github.com/arpitchauhan2002/Football-Analysis-System-Using-YOLO11.git
-cd Football-Analysis-System-Using-YOLO11
+git clone https://github.com/UtkarshTrivedi2934/Assignment-Player-Re-Identification-in-Sports-Footage.git
+cd Assignment-Player-Re-Identification-in-Sports-Footage
 ```
 ### 2️⃣ Create and Activate Virtual Environment (Recommended)
 
@@ -107,25 +107,11 @@ python main.py
 
 ### ▶️ Running the Code
 
-**1. Detection Using Pretrained YOLOv11**
-
-```bash
-from ultralytics import YOLO
-
-# Load the YOLOv11 model (pretrained or custom trained)
-model = YOLO("yolo11l.pt")  # Use "model/best.pt" for trained version
-
-# Run detection on sample video
-results = model.predict(source="input_video/15sec_input_720p.mp4", save=True)
-
-```
-- Outputs: Detected video is saved in runs/detect/predict/
-
-**2. Tracking and Player Re-Identification**
+**Tracking and Player Re-Identification**
 
 ```bash
 After replacing with your trained model:
-model = YOLO("model/best.pt")  # Your fine-tuned YOLOv11 model
+model = YOLO("model/best.pt")  # fine-tuned YOLOv11 model
 results = model.track(source="input_video/15sec_input_720p.mp4", save=True, persist=True)
 
 ```
@@ -136,7 +122,7 @@ results = model.track(source="input_video/15sec_input_720p.mp4", save=True, pers
 ### 🧾 Dependencies
 - Python 3.8+
 - OpenCV
-- Ultralytics (YOLOv8)
+- Ultralytics
 - Torch + TorchVision
 - Torchreid
 - scikit-learn
