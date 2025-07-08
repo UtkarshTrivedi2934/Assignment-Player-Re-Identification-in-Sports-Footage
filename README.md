@@ -70,7 +70,7 @@ pip install opencv-python torch torchvision numpy pillow scikit-learn ultralytic
 
 You can run the system using two different approaches, depending on the model:
 
-**🔹 Run with Pretrained YOLOv11 Model**
+**1. Run with Pretrained YOLOv11 Model**
 
 ```bash
 python yolo_inference.py
@@ -81,7 +81,7 @@ python yolo_inference.py
 - Only numbers and approximate locations will be shown.
 - No refined Re-ID or consistent player identification across frames.
   
-**🟢 Run with Custom Trained YOLOv11 Model**
+**2. Run with Custom Trained YOLOv11 Model**
 - After training your model on annotated football images (referee, football, players, etc.), place your best weights file here:
 ```bash
 model/
