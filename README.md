@@ -76,6 +76,15 @@ model = YOLO("model/best.pt")  # fine-tuned YOLOv11 model
 results = model.track(source="input_video/15sec_input_720p.mp4", save=True, persist=True)
 
 ```
+
+**Then run the following command:**
+
+```bash
+python yolo_inference.py
+```
+
+**You'll get:**
+
 - Annotated video with player IDs: runs/track/predict/
 - Frame-wise results or Re-ID metadata: tracker_stubs/player_detection.pkl
 ---
