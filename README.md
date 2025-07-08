@@ -2,21 +2,6 @@
 
 This repository presents a system for detecting and re-identifying players in football match broadcasts. The model is custom-trained on an annotated dataset using YOLOv11 and includes a tracking pipeline for player association across video frames.
 
-## 📽️ Demo Showcase
-
-### 🟡 Inference Using Pretrained YOLOv11
-**📌 Football Player Detection in Broadcast Footage | Pretrained YOLOv11 Inference Demo**
-[![Pretrained YOLOv11 Detection](https://img.youtube.com/vi/hH7oUJr69xg/maxresdefault.jpg)](https://youtu.be/hH7oUJr69xg)
-🔗 https://youtu.be/hH7oUJr69xg  
-
----
-
-### 🟢 Inference Using Custom Trained YOLOv11
-📌**Custom Trained YOLOv11 Model for Football Player Detection | Re-ID and Tracking Demo**
-[![Custom Trained YOLOv11 Tracking](https://img.youtube.com/vi/k6hgFCCpIeE/maxresdefault.jpg)](https://youtu.be/k6hgFCCpIeE)  
-🔗 https://youtu.be/k6hgFCCpIeE  
-
-
 ---
 ## 📂 Project Overview
 
@@ -33,8 +18,6 @@ This project enables:
 .
 ├── input_video/               # Source input video
 ├── model/                     # Model export or download link
-├── notebook_for_training_the_model/
-│   └── Football_Analysis_System (1).ipynb
 ├── output_videos/sf/          # Output results
 ├── tracker_stubs/             # .pkl file for tracking results
 ├── trackers/                  # Custom tracker logic
