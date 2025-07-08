@@ -66,45 +66,6 @@ No matching distribution found for torch>=1.7.0
 pip install opencv-python torch torchvision numpy pillow scikit-learn ultralytics
 ```
 
-### 4️⃣ Model Setup
-
-You can run the system using two different approaches, depending on the model:
-
-**1. Run with Pretrained YOLOv11 Model**
-
-```bash
-python yolo_inference.py
-```
-📌 Output:
-
-- Player detections will be visible with simple bounding boxes and generic class names.
-- Only numbers and approximate locations will be shown.
-- No refined Re-ID or consistent player identification across frames.
-  
-**2. Run with Custom Trained YOLOv11 Model**
-- After training your model on annotated football images (referee, football, players, etc.), place your best weights file here:
-```bash
-model/
-└── best.pt
-```
-**📥 Note:**
-- A direct download link for the trained model weights (best.pt) is provided inside the file:
-```bash
-model/model_link
-```
--Please open the model_link file and download the model manually. Once downloaded, place it in the model/ folder.
--Or You Can You Your Own Model
-**Then run the main pipeline using:**
-```bash
-python main.py
-```
-**📌 Output:**
-
-- Players and referees are marked with consistent Re-ID numbers (as shown in the output image).
-- Objects such as the football are accurately detected and tracked.
-- Frame-by-frame tracking metadata is saved in tracker_stubs/player_detection.pkl.
-
-
 ### ▶️ Running the Code
 
 **Tracking and Player Re-Identification**
@@ -118,6 +79,12 @@ results = model.track(source="input_video/15sec_input_720p.mp4", save=True, pers
 - Annotated video with player IDs: runs/track/predict/
 - Frame-wise results or Re-ID metadata: tracker_stubs/player_detection.pkl
 ---
+
+**📌 Output:**
+
+- Players and referees are marked with consistent Re-ID numbers (as shown in the output image).
+- Objects such as the football are accurately detected and tracked.
+- Frame-by-frame tracking metadata is saved in tracker_stubs/player_detection.pkl.
 
 ### 🧾 Dependencies
 - Python 3.8+
